@@ -1,0 +1,26 @@
+{
+  "plugins": ["import", "@typescript-eslint"],
+  "extends": [
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "env": {
+    "es2021": true,
+    "browser": true
+  },
+  "rules": {
+    // "no-debugger": "off",
+    // "class-methods-use-this": "off",
+    "no-console": 2,
+    "@typescript-eslint/lines-between-class-members": 0,
+    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/comma-dangle": 0
+  }
+}
